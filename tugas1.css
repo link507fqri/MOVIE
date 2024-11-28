@@ -1,0 +1,174 @@
+/* Grid Video */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+
+.video-card {
+  background-color: #f00404;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.video-card video, 
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  display: block;
+}
+
+.video-card h3 {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.video-card p {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0 10px 10px;
+}
+video, iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-card button:hover {
+  background-color: #0056b3;
+}
+/* Grid Layout untuk Video */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar yang sama */
+  gap: 20px;
+  margin: 20px;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column; /* Menyusun dua baris secara vertikal */
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Baris Atas */
+.top-row {
+  display: flex;
+  justify-content: space-between; /* Membagi kolom dengan jarak antar */
+}
+
+/* Baris Bawah */
+.bottom-row {
+  display: flex;
+  justify-content: space-between; /* Membagi kolom dengan jarak antar */
+}
+
+/* Kartu Video */
+.video-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Thumbnail */
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Judul Video */
+.video-card h3 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+}
+
+.video-card h3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.video-card h3 a:hover {
+  color: #007BFF;
+}
+
+/* Detail Video */
+.video-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Container untuk seluruh grid */
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Membagi dua bagian vertikal atas dan bawah */
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Bagian atas dengan 3 kolom */
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom di atas */
+  gap: 20px;
+}
+
+/* Bagian bawah dengan 3 kolom */
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom di bawah */
+  gap: 20px;
+}
+
+/* Kartu Video */
+.video-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
